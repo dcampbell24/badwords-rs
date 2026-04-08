@@ -5,7 +5,7 @@ use std::{collections::HashMap, io::Cursor};
 
 use serde::Deserialize;
 
-const BAD_WORDS: &str = include_str!("../bad_words.csv");
+const BAD_WORDS: &str = include_str!("../badwords.csv");
 pub const MILD: u8 = 1;
 pub const MODERATE: u8 = 2;
 pub const INTENSE: u8 = 3;
