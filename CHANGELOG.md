@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 0.2.0
+## [0.2.0]
 
 - Remove anyhow and unwrap CSV parsing.
 
@@ -20,4 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[unreleased]: https://codeberg.org/dcampbell/hnefatafl/compare/v0.2.0...main
+[unreleased]: https://codeberg.org/dcampbell/badwords-rs/compare/v0.2.0...main
+[0.2.0]: https://codeberg.org/dcampbell/badwords-rs/compare/v0.1.0...v0.2.0
