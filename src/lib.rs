@@ -18,17 +18,18 @@ struct BadWords {
     severity: u8,
 }
 
-/// # Errors
+/// # Panics
 ///
 /// If it fails to deserialize `bad_words.csv`.
-pub fn censor(words: &str, severity: u8) -> anyhow::Result<String> {
+#[must_use]
+pub fn censor(words: &str, severity: u8) -> String {
     let mut bad_words = HashMap::new();
     let mut reader = csv::ReaderBuilder::new()
         .has_headers(false)
         .from_reader(Cursor::new(BAD_WORDS));
 
     for result in reader.deserialize() {
-        let record: BadWords = result?;
+        let record: BadWords = result.unwrap();
         for word in record.words.split('/') {
             bad_words.insert(word.to_string(), record.severity);
         }
@@ -44,6 +45,5 @@ pub fn censor(words: &str, severity: u8) -> anyhow::Result<String> {
             }
     }
 
-    Ok(censored.join(" "))
+    censored.join(" ")
 }
-
