@@ -3,7 +3,7 @@
 
 [package]
 name = "badwords-rs"
-version = "0.3.0"
+version = "0.4.0"
 edition = "2024"
 rust-version = "1.94"
 license = "MIT AND LGPL-2.1-or-later"
@@ -14,11 +14,11 @@ keywords = ["censor"]
 categories = ["text-processing"]
 include = [
     "src/**/*",
-    "LICENSE.txt",
-    "LICENSE-MIT.txt",
+    "LICENSES/*",
     "README.md",
     "CHANGELOG.md",
     "badwords.csv",
+    "REUSE.toml",
 ]
 
 [dependencies]
