@@ -2,5 +2,24 @@
 name = "badwords-rs"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.94"
+license = "LGPL-2.1"
+description = "An implementation of filtering based on badwords.csv (https://github.com/hughsie/badwords/blob/master/badwords.csv)"
+repository = "https://github.com/dcampbell24/badwords-rs"
+keywords = ["censor"]
+# https://crates.io/category_slugs
+categories = ["text-processing"]
 
 [dependencies]
+anyhow = "1"
+csv = "1"
+serde = { version = "1", features = ["derive"] }
+
+[lints.clippy]
+cargo = "deny"
+complexity = "deny"
+correctness = "deny"
+pedantic = "deny"
+perf = "deny"
+style = "deny"
+suspicious = "deny"

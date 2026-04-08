@@ -1,6 +1,6 @@
 # badwords-rs
 
-This is an implementation of filtering based on [badwords.csv](badwords.csv).
+An implementation of filtering based on [badwords.csv](badwords.csv).
 
 ## Severity
 
