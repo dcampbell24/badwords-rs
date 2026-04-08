@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// SPDX-FileCopyrightText: 2026 David Campbell <dcampbell24@gmail.com>
+
 use std::{collections::HashMap, io::Cursor};
 
 use serde::Deserialize;

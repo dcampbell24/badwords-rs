@@ -1,3 +1,8 @@
+<!--
+SPDX-License-Identifier: MIT
+SPDX-FileCopyrightText: 2026 David Campbell <dcampbell24@gmail.com>
+-->
+
 # badwords-rs
 
 An implementation of filtering based on [badwords.csv](badwords.csv).

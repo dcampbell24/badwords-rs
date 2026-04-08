@@ -1,0 +1,12 @@
+version = 1
+
+[[annotations]]
+path = "bad_words.csv"
+SPDX-License-Identifier = "LGPL-2.1-only"
+SPDX-FileCopyrightText = "Richard Hughes <richard@hughsie.com>"
+
+# Automatically generated file.
+[[annotations]]
+path = "Cargo.lock"
+SPDX-License-Identifier = "MIT"
+SPDX-FileCopyrightText = "NONE"

@@ -1,9 +1,12 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: 2026 David Campbell <dcampbell24@gmail.com>
+
 [package]
 name = "badwords-rs"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.94"
-license = "LGPL-2.1"
+license = "MIT"
 description = "An implementation of filtering based on badwords.csv (https://github.com/hughsie/badwords/blob/master/badwords.csv)"
 repository = "https://codeberg.org/dcampbell/badwords-rs"
 keywords = ["censor"]
