@@ -12,7 +12,14 @@ repository = "https://codeberg.org/dcampbell/badwords-rs"
 keywords = ["censor"]
 # https://crates.io/category_slugs
 categories = ["text-processing"]
-include = ["src/**/*", "LICENSE.txt", "README.md", "CHANGELOG.md", "badwords.csv"]
+include = [
+    "src/**/*",
+    "LICENSE.txt",
+    "LICENSE-MIT.txt",
+    "README.md",
+    "CHANGELOG.md",
+    "badwords.csv",
+]
 
 [dependencies]
 csv = "1"
