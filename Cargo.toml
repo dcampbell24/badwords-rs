@@ -9,6 +9,7 @@ repository = "https://github.com/dcampbell24/badwords-rs"
 keywords = ["censor"]
 # https://crates.io/category_slugs
 categories = ["text-processing"]
+include = ["src/**/*", "LICENSE.txt", "README.md", "CHANGELOG.md", "bad_words.csv"]
 
 [dependencies]
 anyhow = "1"
