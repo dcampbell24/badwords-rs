@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.94"
 license = "MIT"
-description = "An implementation of filtering based on badwords.csv (https://github.com/hughsie/badwords/blob/master/badwords.csv)"
+description = "An implementation of filtering based on badwords (https://github.com/hughsie/badwords)."
 repository = "https://codeberg.org/dcampbell/badwords-rs"
 keywords = ["censor"]
 # https://crates.io/category_slugs
