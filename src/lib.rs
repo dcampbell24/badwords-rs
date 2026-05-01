@@ -44,7 +44,7 @@ impl Default for Censor {
 }
 
 impl Censor {
-    pub fn word(&self, word: &str, severity: u8) -> bool {
+    fn censor_word(&self, word: &str, severity: u8) -> bool {
         if let Some(s) = self.words.get(word)
             && *s >= severity
         {
@@ -55,11 +55,11 @@ impl Censor {
     }
 
     #[must_use]
-    pub fn words(&self, words: &str, severity: u8) -> String {
+    pub fn censor(&self, words: &str, severity: u8) -> String {
         let mut censored = Vec::new();
 
         for word in words.split_whitespace() {
-            if self.word(word, severity) {
+            if self.censor_word(word, severity) {
                 censored.push("*".repeat(word.len()));
             } else {
                 censored.push(word.to_string());

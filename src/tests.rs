@@ -6,18 +6,21 @@
 use crate::{Censor, INTENSE, MILD, MODERATE};
 
 #[test]
-fn test_censoring_words() {
+fn censor() {
     let censor = Censor::default();
 
-    assert_eq!("**** ******** ***", censor.words("dick dickhead fag", MILD));
+    assert_eq!(
+        "**** ******** ***",
+        censor.censor("dick dickhead fag", MILD)
+    );
 
     assert_eq!(
         "dick ******** ***",
-        censor.words("dick dickhead fag", MODERATE)
+        censor.censor("dick dickhead fag", MODERATE)
     );
 
     assert_eq!(
         "dick dickhead ***",
-        censor.words("dick dickhead fag", INTENSE)
+        censor.censor("dick dickhead fag", INTENSE)
     );
 }
