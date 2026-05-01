@@ -12,4 +12,5 @@ SPDX-FileCopyrightText: 2026 David Campbell <dcampbell24@gmail.com>
 [REUSE status]: https://api.reuse.software/badge/github.com/dcampbell24/hnefatafl
 [REUSE link]: https://api.reuse.software/info/github.com/dcampbell24/hnefatafl
 
-An implementation of filtering based on [badwords](https://github.com/hughsie/badwords).
+A Rust implementation of the OARS profanity levels based on
+[badwords](https://github.com/hughsie/badwords).
