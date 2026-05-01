@@ -5,7 +5,7 @@ pub mod tests;
 
 use std::{collections::HashMap, io::Cursor};
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
 const BAD_WORDS: &str = include_str!("../badwords.csv");
 pub const MILD: u8 = 1;
@@ -20,6 +20,7 @@ struct BadWords {
     severity: u8,
 }
 
+#[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Censor {
     words: HashMap<String, u8>,
 }
