@@ -33,3 +33,6 @@ pedantic = "deny"
 perf = "deny"
 style = "deny"
 suspicious = "deny"
+
+# Download crate:
+# https://crates.io/api/v1/crates/badwords-rs/0.6.1/download
